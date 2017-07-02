@@ -1,0 +1,9 @@
+// Dependencies
+@import '../1_root/_config';
+@import '../1_root/mixins/mixins';
+
+@each $font-weight in $font-weight-list {
+    .fw-#{$font-weight} {
+        font-weight: $font-weight
+    }
+}

@@ -13,6 +13,7 @@ module.exports = function(grunt) {
               {outputstyle: '', expand: true, cwd: 'src/7_characteristics_helpers', src: ['font_size_helpers.scss'], dest: 'dist/modules/7_characteristics_helpers', ext: '.css'},
               {outputstyle: '', expand: true, cwd: 'src/7_characteristics_helpers', src: ['line_height_helpers.scss'], dest: 'dist/modules/7_characteristics_helpers', ext: '.css'},
               {outputstyle: '', expand: true, cwd: 'src/7_characteristics_helpers', src: ['text_helpers.scss'], dest: 'dist/modules/7_characteristics_helpers', ext: '.css'},
+              {outputstyle: '', expand: true, cwd: 'src/7_characteristics_helpers', src: ['font_weight_helpers.scss'], dest: 'dist/modules/7_characteristics_helpers', ext: '.css'},
               {outputstyle: '', expand: true, cwd: 'src/5_elements', src: ['elements.scss'], dest: 'dist/modules/5_elements', ext: '.css'}
           ]
       }
