@@ -22,6 +22,21 @@ module.exports = function(grunt) {
       }
     },
 
+    comments: {
+        css: {
+            options: {
+                singleline: true,
+                multiline: true
+            },
+            src: [
+                'dist/modules/1_root/*.css',
+                'dist/modules/3_branches/*.css',
+                'dist/modules/5_elements/*.css',
+                'dist/modules/7_characteristics_helpers/*.css'
+            ]
+        }
+    },
+
     // concat: {
     //   apps: {
     //       src: 'lib/modules/*.css',
@@ -68,10 +83,12 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-cssmin');
   // grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-stripcomments');
 
   // Default task.
   grunt.registerTask('default', [
-    'sass'
+    'sass',
+    'comments'
     // 'concat',
     // 'cssmin:minify',
     // 'cssmin:release',
