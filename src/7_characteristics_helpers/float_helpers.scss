@@ -1,0 +1,36 @@
+// Dependencies
+@import '../1_root/_config';
+@import '../1_root/mixins/mixins';
+
+.float-r {float: right;}
+.float-c {margin: 0 auto;}
+.float-l {float: left;}
+.float-n {float: none !important;}
+
+@include media-size-sm {
+    .sm-float-r {float: right;}
+    .sm-float-c {margin: 0 auto;}
+    .sm-float-l {float: left;}
+    .sm-float-n {float: none !important;}
+}
+
+@include media-size-md {
+    .md-float-r {float: right;}
+    .md-float-c {margin: 0 auto;}
+    .md-float-l {float: left;}
+    .md-float-n {float: none !important;}
+}
+
+@include media-size-lg {
+    .lg-float-r {float: right;}
+    .lg-float-c {margin: 0 auto;}
+    .lg-float-l {float: left;}
+    .lg-float-n {float: none !important;}
+}
+
+@include media-size-xl {
+    .xl-float-r {float: right;}
+    .xl-float-c {margin: 0 auto;}
+    .xl-float-l {float: left;}
+    .xl-float-n {float: none !important;}
+}
