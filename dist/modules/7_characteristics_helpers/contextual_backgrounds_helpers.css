@@ -1,0 +1,37 @@
+/* Set rem font-size with pixel fallback */
+/* USAGE (Set rem font-size with pixel fallback) */
+/*  Breakpoints (TODO define sizes!!!!!) */
+/*  SVG background images with PNG and retina fallback (TODO fix image path!!!!!) */
+/*  Animations and keyframes */
+/* USAGE (Animations and keyframes)*/
+/* Transitions */
+/* USAGE */
+/* Cross browser opacity */
+/* USAGE (Cross browser opacity) */
+/* Clearfix */
+/* USAGE (Clearfix) */
+/* Visually hidden element */
+/* USAGE (Visually hidden element) */
+.bg-theme-1 {
+  color: #00b7ba; }
+
+.bg-theme-2 {
+  color: #00d0d4; }
+
+.bg-theme-3 {
+  color: #00e8ed; }
+
+.bg-grey-1 {
+  color: #4c4c4c; }
+
+.bg-grey-2 {
+  color: #606060; }
+
+.bg-grey-3 {
+  color: #818181; }
+
+.bg-grey-4 {
+  color: #a5a5a5; }
+
+.bg-grey-5 {
+  color: #dbdbdb; }

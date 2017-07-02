@@ -1,0 +1,31 @@
+/* Set rem font-size with pixel fallback */
+/* USAGE (Set rem font-size with pixel fallback) */
+/*  Breakpoints (TODO define sizes!!!!!) */
+/*  SVG background images with PNG and retina fallback (TODO fix image path!!!!!) */
+/*  Animations and keyframes */
+/* USAGE (Animations and keyframes)*/
+/* Transitions */
+/* USAGE */
+/* Cross browser opacity */
+/* USAGE (Cross browser opacity) */
+/* Clearfix */
+/* USAGE (Clearfix) */
+/* Visually hidden element */
+/* USAGE (Visually hidden element) */
+.fs-1 {
+  font-size: 1.667rem; }
+
+.fs-2 {
+  font-size: 1.4rem; }
+
+.fs-3 {
+  font-size: 1.133rem; }
+
+.fs-4 {
+  font-size: 1rem; }
+
+.fs-5 {
+  font-size: 0.8667rem; }
+
+.fs-6 {
+  font-size: 0.7333rem; }

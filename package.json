@@ -1,0 +1,34 @@
+{
+  "name": "naturalcss",
+  "version": "0.0.1",
+  "description": "Advanced CSS library for professional web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS",
+    "SCSS",
+    "CSS",
+    "library",
+    "CSS",
+    "framework",
+    "CSS",
+    "methodology"
+  ],
+  "author": "Oleksiy Pastukhov",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "cssnano": "^3.10.0",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "pixrem": "^3.0.2"
+  }
+}

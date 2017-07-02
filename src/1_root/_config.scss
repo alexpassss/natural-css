@@ -1,0 +1,85 @@
+@import '_theme';
+/// Root reboot
+//// Dt
+$dt-font-weight:              bold !default;
+//// Link
+$link-color:                  $color-theme-1;
+$link-decoration:             none;
+$link-hover-color:            $color-theme-2;
+$link-hover-decoration:       underline;
+//// Text
+$text-muted:                  $color-grey-3 !default;
+//// Caption
+$table-cell-padding:          .75rem !default;
+
+// Root (Html, body variables)
+$root-font-family:            'Arial', sans-serif;
+$root-font-size:              15px;
+$root-font-weight:            400;
+$root-line-height:            1.6;
+$root-text-color:             $color-grey-1;
+$root-body-bg:                $color-white;
+$horizontal-vertical-rythm:   5px;
+$horizontal-rythm:            5px;
+$vertical-rythm:              5px;
+
+// Branches (Grid variables)
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+$media-size-xl:               1200px;
+$media-size-lg:               992px;
+$media-size-md:               768px;
+$media-size-sm:               576px;
+$media-size-xs:               0; // Const
+
+$container-sm-max-width:      540px;
+$container-md-max-width:      720px;
+$container-lg-max-width:      960px;
+$container-xl-max-width:      1140px;
+
+// Headings
+/// Font-family
+$h1-font-family: 'Arial', sans-serif;
+$h2-font-family: 'Arial', sans-serif;
+$h3-font-family: 'Arial', sans-serif;
+$h4-font-family: 'Arial', sans-serif;
+$h5-font-family: 'Arial', sans-serif;
+$h6-font-family: 'Arial', sans-serif;
+/// Font-weight
+$h1-font-weight: 600;
+$h2-font-weight: 600;
+$h3-font-weight: 600;
+$h4-font-weight: 400;
+$h5-font-weight: 400;
+$h6-font-weight: 400;
+/// Font size
+$h1-font-size: 1.667rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 1.133rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.8667rem;
+$h6-font-size: 0.7333rem;
+/// Line height
+$h1-line-height: 2.4rem;
+$h2-line-height: 2rem;
+$h3-line-height: 1.867rem;
+$h4-line-height: 1.6rem;
+$h5-line-height: 1.333rem;
+$h6-line-height: 1.067rem;
+/// Margin bottom
+$h1-margin-bottom: 1.333rem;
+$h2-margin-bottom: 1.333rem;
+$h3-margin-bottom: 1rem;
+$h4-margin-bottom: 0.6667rem;
+$h5-margin-bottom: 0.6667rem;
+$h6-margin-bottom: 0.3333rem;
+
+// 7. CHARACTERISTICS HELPERS
+/// 7.1 Box-offset-helpers
+$margin-number-of-steps: 10;
+$padding-number-of-steps: 6;
+/// 7.2 Line-height-helpers
+$line-height-list: 2.4rem, 2rem, 1.867rem, 1.6rem, 1.333rem, 1.067rem;
+/// 7.3 Font-size-helpers
+$font-size-list: 1.667rem, 1.4rem, 1.133rem, 1rem, 0.8667rem, 0.7333rem;

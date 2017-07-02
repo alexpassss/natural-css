@@ -1,0 +1,41 @@
+h1, .h1 {
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 1.667rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.333rem; }
+
+h2, .h2 {
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 1.333rem; }
+
+h3, .h3 {
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 1.133rem;
+  line-height: 1.867rem;
+  margin-bottom: 1rem; }
+
+h4, .h4 {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.6667rem; }
+
+h5, .h5 {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.8667rem;
+  line-height: 1.333rem;
+  margin-bottom: 0.6667rem; }
+
+h6, .h6 {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.7333rem;
+  line-height: 1.067rem;
+  margin-bottom: 0.3333rem; }

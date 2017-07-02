@@ -1,0 +1,10 @@
+// Dependencies
+@import '../1_root/_theme';
+@import '../1_root/_config';
+@import '../1_root/mixins/mixins';
+
+@for $index from 1 through length($line-height-list) {
+    .lh-#{$index} {
+        line-height: nth($line-height-list, $index);
+    }
+}

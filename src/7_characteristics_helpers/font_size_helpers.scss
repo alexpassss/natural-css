@@ -1,0 +1,10 @@
+// Dependencies
+@import '../1_root/_theme';
+@import '../1_root/_config';
+@import '../1_root/mixins/mixins';
+
+@for $index from 1 through length($font-size-list) {
+    .fs-#{$index} {
+        font-size: nth($font-size-list, $index);
+    }
+}

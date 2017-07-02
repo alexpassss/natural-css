@@ -1,0 +1,162 @@
+/* Set rem font-size with pixel fallback */
+@function calculateRem($size) {
+  $remSize: $size / $root-font-size;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size; // ?
+  font-size: calculateRem($size);
+}
+
+/* USAGE (Set rem font-size with pixel fallback) */
+// p {
+//   @include font-size(14px)
+// }
+
+/*  Breakpoints (TODO define sizes!!!!!) */
+@mixin media-size-xl {
+  @media all and (min-width: $media-size-xl) {
+    @content;
+  }
+}
+
+@mixin media-size-lg {
+  @media all and (min-width: $media-size-lg) {
+    @content;
+  }
+}
+
+@mixin media-size-md {
+  @media all and (min-width: $media-size-md) {
+    @content;
+  }
+}
+
+@mixin media-size-sm {
+  @media all and (min-width: $media-size-sm) {
+    @content;
+  }
+}
+
+/*  SVG background images with PNG and retina fallback (TODO fix image path!!!!!) */
+$image-path: '../img' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+@mixin background-image($name, $size:false){
+    background-image: url(#{$image-path}/#{$name}.svg);
+    @if($size){
+        background-size: $size;
+    }
+    .no-svg &{
+        background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+        }
+    }
+}
+
+/*  Animations and keyframes */
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+/* USAGE (Animations and keyframes)*/
+// @include keyframes(slide-down) {
+//   0% { opacity: 1; }
+//   90% { opacity: 0; }
+// }
+//
+// .element {
+//   width: 100px;
+//   height: 100px;
+//   background: black;
+//   @include animation('slide-down 5s 3');
+// }
+
+/* Transitions */
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/* USAGE */
+// a {
+//   color: gray;
+//   @include transition(color .3s ease);
+//   &:hover {
+//     color: black;
+//   }
+// }
+
+/* Cross browser opacity */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/* USAGE (Cross browser opacity) */
+// .faded-text {
+//   @include opacity(0.8);
+// }
+
+/* Clearfix */
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* USAGE (Clearfix) */
+// .container-with-floated-children {
+//   @extend %clearfix;
+// }
+
+/* Visually hidden element */
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+/* USAGE (Visually hidden element) */
+// .visually-hidden {
+//   @extend %visuallyhidden;
+// }

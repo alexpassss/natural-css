@@ -1,0 +1,17 @@
+// Dependencies
+@import '../1_root/_theme';
+@import '../1_root/_config';
+@import '../1_root/mixins/mixins';
+
+// Creation list of helper classes for contextual backgrounds
+@for $index from 1 through length($color-theme-list) {
+    .bg-theme-#{$index} {
+        color: nth($color-theme-list, $index);
+    }
+}
+
+@for $index from 1 through length($color-grey-list) {
+    .bg-grey-#{$index} {
+        color: nth($color-grey-list, $index);
+    }
+}

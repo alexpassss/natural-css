@@ -1,0 +1,31 @@
+/* Set rem font-size with pixel fallback */
+/* USAGE (Set rem font-size with pixel fallback) */
+/*  Breakpoints (TODO define sizes!!!!!) */
+/*  SVG background images with PNG and retina fallback (TODO fix image path!!!!!) */
+/*  Animations and keyframes */
+/* USAGE (Animations and keyframes)*/
+/* Transitions */
+/* USAGE */
+/* Cross browser opacity */
+/* USAGE (Cross browser opacity) */
+/* Clearfix */
+/* USAGE (Clearfix) */
+/* Visually hidden element */
+/* USAGE (Visually hidden element) */
+.lh-1 {
+  line-height: 2.4rem; }
+
+.lh-2 {
+  line-height: 2rem; }
+
+.lh-3 {
+  line-height: 1.867rem; }
+
+.lh-4 {
+  line-height: 1.6rem; }
+
+.lh-5 {
+  line-height: 1.333rem; }
+
+.lh-6 {
+  line-height: 1.067rem; }
