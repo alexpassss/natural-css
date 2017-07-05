@@ -1,3 +1,8 @@
 .hr {
   height: $hr-height;
+  width: $hr-width;
+  &.border {
+    border-style: $hr-border-style;
+    border-width: $hr-border-width;
+  }
 }

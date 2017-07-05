@@ -78,7 +78,11 @@ $h6-margin-bottom: 0.3333rem;
 // 5 ELEMENTS
 /// 5.1 TYPOGRAPHY
 /// 5.1.1 HR
-$hr-height: 1px;
+$hr-height: 1rem;
+$hr-width : auto;
+$hr-border-style: solid;
+$hr-border-width: auto;
+
 
 // 7. CHARACTERISTICS HELPERS
 /// 7.1 Box-offset-helpers
